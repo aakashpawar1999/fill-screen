@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace,sans-serif;
+}
+
+.btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 35vh;
+  margin: 45vh auto;
+  padding: 8px;
+  background-color: #2f9eff;
+  color: #fff;
+  font-size: 35px;
+  border: none;
+  z-index: 1;
+  background-position: 50% 50%;
+}
+
+.btn2 {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 35vh;
+  margin: 45vh auto;
+  padding: 8px;
+  background-color: #2f9eff;
+  color: #fff;
+  font-size: 35px;
+  border: none;
+  z-index: 1;
+  background-position: 50% 50%;
+}
+
+.background {
+  height: 100vh;
+  background-image: linear-gradient(#2f9eff,#2f9eff);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  transition: background-size .7s;
+}
+
+.animate {
+  background-size: 100% 100%;
+}

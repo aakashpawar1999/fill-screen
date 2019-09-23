@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fill Screen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section>
+    <button type="button" id="btn" class="btn" name="button" onclick="myFunction()">Click Me !</button>
+    <button type="button" id="btn2" class="btn2" name="button" onclick="backMyFunction()">Back</button>
+    <div id="background" class="background"></div>
+  </section>
+
+  <script type="text/javascript">
+
+    function myFunction() {
+      document.getElementById('btn').style.visibility = "hidden";
+      document.getElementById('background').classList.add('animate');
+      document.getElementById('btn2').style.visibility = "visible";
+    }
+
+    function backMyFunction() {
+      document.getElementById('btn').style.visibility = "visible";
+      document.getElementById('background').classList.remove('animate');
+      document.getElementById('btn2').style.visibility = "hidden";
+    }
+
+  </script>
+
+</body>
+
+</html>
